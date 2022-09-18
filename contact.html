@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Booking</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1 style="align-items: Center;">Registeration</h1>
+          <div class="column">
+            <form action="/action_page.php" onsubmit="func()" method="post">
+              <label for="fname">Your Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name.." autocomplete="off">
+              <label for="lname">Phone Number</label>
+              <input type="number" id="lname" name="phone" placeholder="Your phone no.." autocomplete="off">
+              <label for="country">Email Id</label>
+              <input type="email" id="email" name="emailId" placeholder="Your email address.." autocomplete="off">
+              <label for="subject">Description</label>
+              <textarea id="subject" name="subject" placeholder="Write description about your preferance.." style="height:170px"></textarea>
+              <input type="submit" value="Registeration" class="btn btn-primary">
+            </form>
+          </div>
+        </div>
+      </div>
+      <script>
+        function func(){
+          alert("Your Table is Booked");
+        }
+      </script>
+</body>
+</html>
